@@ -5,7 +5,7 @@ import { Award } from "lucide-react"
 export default function() {
 
   return (
-    <div className="w-screen h-screen flex flex-col justify-center items-center bg-gray-100 pt-[80px]">
+    <div className="w-screen h-full flex flex-col justify-center items-center bg-gray-100 bg-opacity-70">
       <div className="flex items-center justify-center p-3 px-4 bg-orange-200 border-red-950 border rounded-[50px] text-[24px] font-semibold mb-10">
         <div className="pr-1" ><Award size={30} /></div>
         <h1 className="text-red-950">
@@ -14,7 +14,7 @@ export default function() {
       </div>
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-7xl font-bold">
-          Pr Hub help you showcase
+          We help you showcase
         </h1>
         <div className="mt-4 w-fit text-6xl rounded-lg bg-gradient-to-r from-pink-600 to-red-400 text-white font-bold text-center p-4">
           Pull Requests
