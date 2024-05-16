@@ -5,7 +5,7 @@ import { Award } from "lucide-react"
 export default function() {
 
   return (
-    <div className="w-screen h-full flex flex-col justify-center items-center bg-gray-100 bg-opacity-70">
+    <div className="w-screen h-full flex flex-col justify-center items-center">
       <div className="flex items-center justify-center p-3 px-4 bg-orange-200 border-red-950 border rounded-[50px] text-[24px] font-semibold mb-10">
         <div className="pr-1" ><Award size={30} /></div>
         <h1 className="text-red-950">
