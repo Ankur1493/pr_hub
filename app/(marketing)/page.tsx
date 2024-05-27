@@ -1,10 +1,8 @@
 import { Award } from "lucide-react"
-import { auth } from "@/auth"
 import Link from "next/link"
 
 
 export default async function HomePage() {
-  const session = await auth()
   return (
     <div className="w-screen h-full flex flex-col justify-center items-center">
       <div className="flex items-center justify-center p-3 px-4 bg-orange-200 border-red-950 border rounded-[50px] text-[24px] font-semibold mb-10">
@@ -29,7 +27,7 @@ export default async function HomePage() {
       <div
         className="mt-8 p-3 px-5 border-white bg-black text-white text-[20px] font-semibold rounded-xl"
       >
-        <Link href="/home">
+        <Link href="/login">
           Create your hub for free
         </Link>
       </div>

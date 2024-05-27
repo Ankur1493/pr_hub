@@ -20,12 +20,12 @@ export default function RootLayout({
       <head />
       <body
         className={cn(
-          " h-screen bg-background font-sans antialiased",
+          " h-screen bg-gray-100 bg-opacity-70 font-sans antialiased",
           fontSans.variable
         )}
       >
         <Navbar />
-        <div className="h-screen bg-gray-100 bg-opacity-70">
+        <div className="pt-[60px] h-screen ">
           {children}
         </div>
         <Footer />

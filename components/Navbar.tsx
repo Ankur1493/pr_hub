@@ -5,7 +5,7 @@ import { SignIn } from "./SignIn"
 
 export default function Navbar() {
   return (
-    <div className="h-16 px-16 flex justify-between items-center shadow-md shadow-gray-400">
+    <div className="h-[60px] px-12 w-screen fixed flex justify-between items-center shadow-md shadow-gray-300">
       <Link href={"/"} className="text-2xl font-bold text-yellow-800">
         PrHub
       </Link>
