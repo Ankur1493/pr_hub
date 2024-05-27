@@ -2,7 +2,7 @@ import { Github, Linkedin, Twitter } from "lucide-react";
 
 export default function Footer() {
   return (
-    <div className="flex justify-around w-screen py-4  fixed bottom-0 border-t-red-200 border-t">
+    <div className="z-10 bg-gray-100 flex justify-around w-screen py-4  fixed bottom-0 border-t-red-200 border-t">
       <div>
         Created by <a href="https://github.com/ankur1493">Ankur Sharma</a>
       </div>
