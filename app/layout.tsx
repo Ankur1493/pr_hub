@@ -25,7 +25,7 @@ export default function RootLayout({
         )}
       >
         <Navbar />
-        <div className="pt-[60px] h-screen ">
+        <div className="pt-[65px] h-screen ">
           {children}
         </div>
         <Footer />

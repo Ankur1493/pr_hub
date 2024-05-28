@@ -9,14 +9,23 @@ const RepositoryDisplay = async () => {
     return (<div>Error fetching you github repositories</div>)
   }
   return (
-    <div className="w-1/2 h-full flex flex-col justify-center items-center bg-red-400">
-      <h1 className="text-4xl font-medium">
+    <div className="w-2/3 pt-2 h-full flex gap-4 flex-col justify-center items-center">
+      <h1 className="text-4xl font-bold">
         Here are you Repositories
       </h1>
-      <div className="border rounded-lg w-3/4">
+      <div className="min-h-[80%] overflow-y-scroll mb-16 rounded-lg w-[90%] grid grid-cols-2 gap-2">
         {userRepos &&
           userRepos.map((repo: GithubRepository) => (
-            <RepoCard id={repo.id} repoName={repo.name} />
+            <RepoCard
+              key={repo.id}
+              id={repo.id}
+              repoName={repo.name}
+              url={repo.html_url}
+              language={repo.language !== null ? repo.language : undefined}
+              stars={repo.stargazers_count}
+              homePage={repo.homepage !== null ? repo.homepage : undefined}
+              forked={repo.fork}
+            />
           ))
         }
       </div>
